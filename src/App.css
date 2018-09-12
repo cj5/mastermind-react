@@ -1,28 +1,69 @@
 .App {
+  position: relative;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden; 
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.gameboard-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0 80px;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+.gameboard-wrapper h1 {
+  text-transform: uppercase;
+}
+.gameboard {
+  width: 500px;
+  /* height: 1000px; */
   padding: 20px;
-  color: #fff;
+  border: 2px solid #555;
+  border-radius: 4px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
 }
-
-.App-title {
-  font-size: 1.5em;
+.row {
+  border: 2px solid #555;
+  border-radius: 4px;
+  padding: 14px;
+  margin-bottom: 20px;
+  display: flex;
 }
-
-.App-intro {
-  font-size: large;
+.row:last-of-type {
+  margin-bottom: 0;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.guess-spots {
+  width: 70%;
+  margin-right: 4%;
+  padding-right: 6%;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #555;
+  align-items: center;
+}
+.key-spots {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.key-row {
+  display: flex;
+  justify-content: center;
+}
+.guess-spot {
+  border: 2px solid #555;
+  height: 50px;
+  width: 50px;
+  margin: 0 12px;
+  border-radius: 50%;
+}
+.key-spot {
+  border: 2px solid #555;
+  height: 18px;
+  width: 18px;
+  margin: 5px;
+  border-radius: 50%;
 }
