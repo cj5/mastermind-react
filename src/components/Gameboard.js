@@ -12,7 +12,7 @@ class Gameboard extends React.Component {
       <div className="gameboard-wrapper">
         <h1>Mastermind</h1>
         <div className="gameboard">
-          { rowArray.map((i) => <Row key={i} rowNum={'row row-' + i} />) }
+          { rowArray.map((i) => <Row key={i} rowNum={'row row-' + i} rowLabel={i} />) }
         </div>
       </div>
     );

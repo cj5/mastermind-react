@@ -25,6 +25,7 @@
   flex-direction: column;
 }
 .row {
+  position: relative;
   border: 2px solid #555;
   border-radius: 4px;
   padding: 14px;
@@ -66,4 +67,9 @@
   width: 18px;
   margin: 5px;
   border-radius: 50%;
+}
+.row-label {
+  position: absolute;
+  top: 7px;
+  left: 7px;
 }
