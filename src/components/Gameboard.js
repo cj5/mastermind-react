@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Selector from './Selector';
 import Row from './Row';
 
 let rowArray = [];
@@ -12,6 +13,7 @@ class Gameboard extends React.Component {
       <div className="gameboard-wrapper">
         <h1>Mastermind</h1>
         <div className="gameboard">
+        <Selector />
           { rowArray.map((i) => <Row key={i} rowNum={'row row-' + i} rowLabel={i} />) }
         </div>
       </div>
